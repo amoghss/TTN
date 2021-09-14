@@ -1,0 +1,7 @@
+Question-- How are inline and block elements different from each other?
+
+Answer-- 
+
+INLINE-> Displays an element as an inline element. Any height and width properties will have no effect.
+
+BLOCK-> Displays an element as an inline-level block container. You CAN set height and width values.
