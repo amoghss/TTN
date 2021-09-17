@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#flip").hover(function(){
+        $(".panel").slideToggle("slow");
+    });
+});
+</script>
+
+<style> 
+ #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+}
+
+.panel {
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+ 
+<div id="flip">Hover to see drop down</div>
+<div class="panel">Option 1</div>
+<div class="panel">Option 2</div>
+<div class="panel">Option 3</div>
+<div class="panel">option 4</div>
+
+
+</body>
+</html>
