@@ -1,0 +1,47 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+    
+        $('.age').each(function(i, n) {
+       if($(n).text() > 10) 
+          $(n).css('color', 'green').css('background-color','yellow');
+    });
+    });
+</script>
+
+<style>
+    table, td, th{
+        border: 1px solid black;
+    }
+</style>
+</head>
+<body>
+
+<table id="table" >
+  <tr>
+    <th class="name">First Name</th>
+    <th class="age">Age</th>
+  </tr>
+  <tr>
+    <td class="name">Person 1</td>
+    <td class="age">15</td>
+  </tr>
+  <tr>
+    <td class="name">Person 2</td>
+    <td class="age">9</td>
+  </tr>
+   <tr>
+    <td class="name">Person 3</td>
+    <td class="age">6</td>
+  </tr>
+<tr>
+    <td class="name">Person 4</td>
+    <td class="age">18</td>
+  </tr>
+</table>
+</body>
+</html>
