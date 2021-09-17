@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("button").click(function() {
+            $(".target").parent("#main").css('font-size', '200%');
+        });
+        
+    });
+</script>
+
+</head>
+<body>
+<div id="main">
+	<p class="target">I AM FROM MAIN</p>
+</div>
+
+<div id="notmain">
+	<p class="target">I AM NOT FROM MAIN</p>
+</div>
+<button>CHANGE</button>
+
+	
+
+</body>
+</html>
