@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Ques 12</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<header>
+			<h1 class="heading">TO THE NEW</h1>
+
+			<nav class="nav">
+				<a href="#home" class="nav-link" style="color: blue;">Home</a>
+
+				<a href="#help" class="nav-link" style="color: blue;">Quick Help</a>
+			</nav>
+		</header>
+
+		<hr/>
+
+		<section id="main">
+
+			<section class="form-container">
+				<h3 class="heading">Bug Report</h3>
+
+				<form class="form">
+					<section class="field-container">
+						<label for="title">Title:*</label>
+						<input type="text" id="title" name="title" placeholder="Title" required/>
+					</section>
+
+					<section class="field-container">
+						<label for="description">Description:*</label>
+						<textarea name="description" id="description" placeholder="Description" required></textarea>
+					</section>
+
+					<section class="field-container">
+						<label for="operating-system">Operating System:</label>
+						<select name="operating system" id="operating-system">
+							<option value="Windows XP">Windows XP</option>
+							<option value="Ubuntu">Ubuntu</option>
+							<option value="MacOS">MacOS</option>
+						</select>
+					</section>
+
+					<section class="field-container">
+						<label for="product">Product:*</label>
+						<select name="product" id="product">
+							<option value="Formoid">Formoid</option>
+							<option value="Xyz">Xyz</option>
+							<option value="abc">abc</option>
+						</select>
+					</section>
+
+					<section class="field-container">
+						<label for="version">Version:*</label>
+						<input type="text" id="version" name="version" placeholder="eg: 2.0" required />
+					</section>
+
+					<section class="radio-group">
+						<p class="radio-group-heading">License:*</p>
+
+						<section class="group-row">
+							<section class="field-container">
+								<label for="license">Free</label>
+								<input type="radio" name="license" value="Free" id="license-free" required/>
+							</section>
+
+							<section class="field-container">
+								<label for="license-business">Business</label>
+								<input type="radio" name="license" value="Business" id="license-Business" required/>
+							</section>
+						</section>
+					</section>
+
+					<section class="field-container">
+						<label for="severity">Severity:</label>
+						<select name="severity" id="severity">
+							<option value="Formoid">Critical</option>
+							<option value="Xyz">Moderate</option>
+							<option value="abc">Low</option>
+						</select>
+					</section>
+
+					<section class="field-container">
+						<label for="attachments">Attachments</label>
+						<input type="file" id="attachments" name="attachments" />
+					</section>
+
+					<section class="footer">
+						<input type="submit" class="submit-btn" value="Send" />
+					</section>
+				</form>
+			</section>
+		</main>
+	</body>
+</html>

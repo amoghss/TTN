@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Q12</title>
+<style>
+html,body{height:100%;width:100%}
+
+html, body {
+    height : 100%;
+}
+.parent {
+    width : 80%;
+    height : 80%;
+    background : grey;
+}
+
+div ul li {
+    background : olive;
+    list-style:none;
+    display: inline;
+    
+}
+
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+
+    $(document).ready(function()
+    {
+            
+    $('.parent').on('click', function () 
+    { alert('You clicked on the parent element.'); }).children().on('click', function (e) 
+    { 
+        e.stopPropagation();
+    });
+    });
+    
+    
+    </script>
+
+
+</head>
+<body>
+
+
+    <div class="parent">
+    
+       <ul>
+       <li> list inside div</li>
+       <li> list inside div</li>
+       <li> list inside div</li>
+     
+       </ul>
+    </div>
+
+</body>
+</html>

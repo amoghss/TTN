@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() { 
+         $('select').on('change', function() {
+         $("#selected").append(this.value+" <br>")
+});
+});    
+</script>
+
+</head>
+<body>
+<p>Select food from the list.</p>
+
+<select>
+  <option value="">Option List</option>
+  <option value="1">OP 1</option>
+  <option value="2">OP 2</option>
+  <option value="3">OP 3</option>
+  <option value="4">OP 4</option>
+</select>
+
+<p>So you want to have <span><p id="selected"></p></span> </p>
+
+
+
+</body>
+</html>

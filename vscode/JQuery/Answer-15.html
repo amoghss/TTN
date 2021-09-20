@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Q15</title>
+   <meta charset="UTF-8">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        </head>
+   <body>
+
+ <div id="div1"><b>Hello and Welcome to jQuery</b></div>
+        <button type="button">Click Me!</button>
+
+<script>
+$(document).ready(function(){
+    $("button").click(function() {
+	// data path
+        $.ajax({url: "load.txt", async: false, success: function(result) {
+ 	// get Result
+	$("div").append("<p>Worked</p>");
+        }});
+    });
+});
+
+</script>
+</body>
+</html>

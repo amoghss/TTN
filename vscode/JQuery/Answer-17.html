@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+
+    const images=['body.jpg', 'header.jpeg', 'herder2.jpg'];
+
+    $(document).each(function() {
+		
+        $.each(images,function(i,l)
+        {
+            alert(l);
+            $('#Slide').replaceWith("<img id='Slide' src=./image/"+images[i]+">");
+            
+        });
+	});
+  
+</script>
+
+</head>
+
+<body>
+<div id="SlideShow">
+    <img id="Slide">
+</div>
+</body>
+</html>

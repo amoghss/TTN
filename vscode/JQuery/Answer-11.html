@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script>
+      $(document).ready(function() {
+       
+       $('#a').click(function (e) {
+        e.preventDefault();
+        alert('cannot access google');
+       });
+      });
+     </script>  
+    </head>
+
+    <body>
+
+     <button><a id='a' href='http://www.google.com'> Go To Google </a></button>
+    
+    </body>
+    </html>

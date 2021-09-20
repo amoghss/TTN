@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Q14</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+
+    $(document).ready(function()
+    {
+            var highest = null;
+            var maxHeight = 0;
+           $(".list").each(function()
+           {
+             var h = $(this).height();
+             
+                  if(h > maxHeight){
+                       maxHeight = h;
+                       highest=$(this);
+                        }         
+          });
+            alert('max height '+maxHeight); 
+             $(highest).css("background-color","grey");   
+    });
+    
+    
+    </script>
+
+</head>
+<body>
+
+
+    <div class="list">
+    
+      Line 1 in div 1<br>
+      Line 2 in div 2<br>
+    </div>
+     <br>
+    <div class="list">
+      Line 1 in div 2<br>
+      Line 2 in div 2<br>
+      Line 3 in div 2<br>
+     
+    </div>
+   <br>
+    <div class="list">
+      Line 1 in div 3 <br>
+      Line 2 in div 3 <br>      
+    </div>
+     <br>
+
+    <div class="list">
+      Line 1 in div 4<br>
+      Line 2 in div 4<br>
+    </div>
+</body>
+</html>
